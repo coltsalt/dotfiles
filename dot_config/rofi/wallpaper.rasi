@@ -1,0 +1,87 @@
+/* Rofi Wallpaper Picker - Compact 3-Column Grid Layout */
+
+* {
+    /* Matching the Komorebi clean blueish-grey palette */
+    bg-color:            #1e222a; 
+    selected-bg:         #2e3440; 
+    fg-white:            #ffffff; 
+    fg-dim:              #61afef;
+
+    background-color:    transparent;
+    text-color:          @fg-white;
+    font:                "JetBrainsMono Nerd Font 10";
+}
+
+window {
+    background-color:    @bg-color;
+    border:              1px;
+    border-color:        #2d3139;
+    border-radius:       16px;
+    width:               780px;      /* Expanded width to fit the grid perfectly */
+    padding:             20px;
+}
+
+mainbox {
+    children:            [ inputbar, listview ];
+    spacing:             16px;
+}
+
+inputbar {
+    border:              1px;
+    border-color:        #3b4252;
+    border-radius:       10px;
+    padding:             8px 12px;
+    children:            [ prompt, entry ];
+}
+
+prompt {
+    text-color:          @fg-dim;
+    margin:              0px 6px 0px 0px;
+}
+
+entry {
+    text-color:          @fg-white;
+    placeholder:         "Search wallpapers...";
+    placeholder-color:   #4c566a;
+}
+
+/* ==========================================================
+   THE GRID GENERATOR
+   ========================================================== */
+listview {
+    columns:             3;          /* 3 distinct thumbnail card paths next to each other */
+    lines:               2;          /* Shows 2 rows clearly (6 items total per page view) */
+    fixed-height:        false;
+    dynamic:             true;
+    scrollbar:           false;
+    spacing:             14px;       /* Margin gap spacing between grid elements */
+    layout:              vertical;
+}
+
+element {
+    orientation:         vertical;   /* Forces the image icon directly ABOVE the filename text */
+    padding:             14px 8px;
+    border-radius:       12px;
+    background-color:    transparent;
+}
+
+element selected {
+    background-color:    @selected-bg;
+    text-color:          @fg-white;
+    border:              1px;
+    border-color:        #4c566a;
+}
+
+/* Centering the structural elements inside the card pods */
+element-icon {
+    size:                150px;      /* Huge graphic aspect size box to make thumbnails pop */
+    horizontal-align:    0.5;        /* Snaps the image preview into dead-center alignment */
+    vertical-align:      0.5;
+}
+
+element-text {
+    horizontal-align:    0.5;        /* Centers the image filename string right underneath the card */
+    vertical-align:      0.5;
+    padding:             6px 0px 0px 0px;
+    text-color:          inherit;
+}

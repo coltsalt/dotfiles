@@ -1,0 +1,83 @@
+/* Rofi Grid App Launcher - Inspired by Screenshot 2026-06-25 010601.png */
+
+* {
+    /* Main base colors */
+    bg-color:            #181a23; 
+    search-bg:           #1e2030;
+    fg-white:            #ffffff; 
+    fg-dim:              #a5adcb;
+
+    /* The distinct bright blue selected item highlight from the screenshot */
+    selected-blue:       #7aa2f7;
+    selected-fg:         #15161e;
+
+    background-color:    transparent;
+    text-color:          @fg-white;
+    font:                "JetBrainsMono Nerd Font 10";
+}
+
+window {
+    background-color:    @bg-color;
+    border-radius:       16px;
+    width:               750px;       /* Wide enough to cleanly space 4 columns */
+    height:              480px;       
+    padding:             30px;
+}
+
+mainbox {
+    children:            [ inputbar, listview ];
+    spacing:             20px;
+}
+
+inputbar {
+    background-color:    @search-bg;
+    border-radius:       8px;
+    padding:             12px 16px;
+    children:            [ entry ];
+}
+
+entry {
+    text-color:          @fg-white;
+    placeholder:         "Search";
+    placeholder-color:   #565f89;
+}
+
+/* ==========================================================
+   4-COLUMN APPLICATION GRID
+   ========================================================== */
+listview {
+    columns:             4;          /* Matches the 4 columns in the screenshot */
+    lines:               3;          /* Displays 3 clean rows per view page */
+    fixed-height:        true;
+    dynamic:             true;
+    scrollbar:           false;
+    spacing:             16px;       /* Gap between grid cards */
+    layout:              vertical;
+}
+
+element {
+    orientation:         vertical;   /* Stacks icon cleanly over text */
+    padding:             16px 10px;
+    border-radius:       8px;
+    background-color:    transparent;
+    spacing:             12px;       /* Space between app icon and name */
+}
+
+/* Blue card overlay */
+element selected {
+    background-color:    @selected-blue;
+    text-color:          @selected-fg;
+}
+
+element-icon {
+    size:                44px;       /* Large, clean icon scaling */
+    horizontal-align:    0.5;        /* Dead-centers the app icon */
+    vertical-align:      0.5;
+    text-color:          inherit;
+}
+
+element-text {
+    horizontal-align:    0.5;        /* Dead-centers the text below the icon */
+    vertical-align:      0.5;
+    text-color:          inherit;
+}

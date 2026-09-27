@@ -1,0 +1,70 @@
+{
+    "workbench.colorTheme": "Fluent OLED",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
+    "window.enableMenuBarMnemonics": false,
+    "window.menuStyle": "native",
+    "workbench.notifications.showInTitleBar": false,
+    "window.titleBarStyle": "native",
+    "window.customMenuBarAltFocus": false,
+    "window.menuBarVisibility": "hidden",
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.location": "top",
+    "window.confirmSaveUntitledWorkspace": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "One Dark italic",
+                "scope": [
+                    "comment",
+                    "entity.other.attribute-name",
+                    "keyword",
+                    "markup.underline.link",
+                    "storage.modifier",
+                    "storage.type",
+                    "string.url",
+                    "variable.language.super",
+                    "variable.language.this"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "One Dark italic reset",
+                "scope": [
+                    "keyword.operator",
+                    "keyword.other.type",
+                    "storage.modifier.import",
+                    "storage.modifier.package",
+                    "storage.type.built-in",
+                    "storage.type.function.arrow",
+                    "storage.type.generic",
+                    "storage.type.java",
+                    "storage.type.primitive"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.activeIconPack": "bashly",
+    "material-icon-theme.folders.theme": "classic",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "window.customTitleBarVisibility": "never",
+    "workbench.statusBar.visible": false,
+    "workbench.editorAssociations": {
+        "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
+        "*.qrc": "qt-core.qrcEditor"
+    },
+    "qt-core.additionalQtPaths": [
+        {
+            "name": "Qt-5.15.19-linux-g++-x86_64_from_PATH",
+            "path": "/usr/bin/qmake"
+        }
+    ],
+    "qt-qml.qmlls.useQmlImportPathEnvVar": true,
+    "editor.fontLigatures": true,
+    "explorer.confirmDragAndDrop": false
+}

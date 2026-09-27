@@ -1,0 +1,130 @@
+<!DOCTYPE patchbay>
+<patchbay name="sysaud" version="1.0.3">
+ <items>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-1" port="Firefox:output_FR"/>
+   <input node="Easy Effects Sink" port="Easy Effects Sink:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Carla" port="Carla:audio-out1"/>
+   <input node="Music" port="Music:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="LSP Limiter Stereo" port="LSP Limiter Stereo:Output R"/>
+   <input node="FIIO KA13 Analog Stereo" port="FIIO KA13:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Spotify/spotify" port="spotify:output_FL"/>
+   <input node="Music" port="Music:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Music" port="Music:monitor_FR"/>
+   <input node="LSP Parametric Equalizer x8 Stereo" port="LSP Parametric Equalizer x8 Stereo:Input R"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="fifine Microphone Mono" port="fifine Microphone:capture_MONO"/>
+   <input node="DeepFilter Mono" port="DeepFilter Mono:Audio In"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Audio Gain (Stereo)" port="Audio Gain (Stereo):output_2"/>
+   <input node="FIIO KA13 Pro" port="FIIO KA13:playback_AUX1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Music" port="Music:monitor_FL"/>
+   <input node="Easy Effects Sink" port="Easy Effects Sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Music" port="Music:monitor_FL"/>
+   <input node="LSP Parametric Equalizer x8 Stereo" port="LSP Parametric Equalizer x8 Stereo:Input L"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-1" port="Firefox:output_FL"/>
+   <input node="Browser" port="Browser:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="LSP Compressor Stereo" port="LSP Compressor Stereo:Output L"/>
+   <input node="LSP Limiter Stereo" port="LSP Limiter Stereo:Input L"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Browser" port="Browser:monitor_FL"/>
+   <input node="FIIO KA13 Analog Stereo" port="FIIO KA13:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="DeepFilter Mono" port="DeepFilter Mono:Audio Out"/>
+   <input node="Chromium input" port="Chromium input:input_MONO"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-1" port="Firefox:output_FL"/>
+   <input node="Easy Effects Sink" port="Easy Effects Sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="LSP Limiter Stereo" port="LSP Limiter Stereo:Output L"/>
+   <input node="FIIO KA13 Analog Stereo" port="FIIO KA13:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="LSP Parametric Equalizer x8 Stereo" port="LSP Parametric Equalizer x8 Stereo:Output L"/>
+   <input node="LSP Compressor Stereo" port="LSP Compressor Stereo:Input L"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FL"/>
+   <input node="Browser" port="Browser:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-1" port="Firefox:output_FR"/>
+   <input node="Browser" port="Browser:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Music" port="Music:monitor_FR"/>
+   <input node="Easy Effects Sink" port="Easy Effects Sink:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Spotify/spotify" port="spotify:output_FR"/>
+   <input node="Music" port="Music:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="LSP Limiter Stereo" port="LSP Limiter Stereo:Output R"/>
+   <input node="FIIO KA13 Pro" port="FIIO KA13:playback_AUX1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Game" port="Game:monitor_FL"/>
+   <input node="Audio Gain (Stereo)" port="Audio Gain (Stereo):input_1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Browser" port="Browser:monitor_FR"/>
+   <input node="FIIO KA13 Analog Stereo" port="FIIO KA13:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Audio Gain (Stereo)" port="Audio Gain (Stereo):output_1"/>
+   <input node="FIIO KA13 Pro" port="FIIO KA13:playback_AUX0"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Game" port="Game:monitor_FR"/>
+   <input node="Audio Gain (Stereo)" port="Audio Gain (Stereo):input_2"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="LSP Compressor Stereo" port="LSP Compressor Stereo:Output R"/>
+   <input node="LSP Limiter Stereo" port="LSP Limiter Stereo:Input R"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Browser" port="Browser:monitor_FL"/>
+   <input node="Audio Gain (Stereo)" port="Audio Gain (Stereo):input_1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="LSP Limiter Stereo" port="LSP Limiter Stereo:Output L"/>
+   <input node="FIIO KA13 Pro" port="FIIO KA13:playback_AUX0"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FR"/>
+   <input node="Browser" port="Browser:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="LSP Parametric Equalizer x8 Stereo" port="LSP Parametric Equalizer x8 Stereo:Output R"/>
+   <input node="LSP Compressor Stereo" port="LSP Compressor Stereo:Input R"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Browser" port="Browser:monitor_FR"/>
+   <input node="Audio Gain (Stereo)" port="Audio Gain (Stereo):input_2"/>
+  </item>
+ </items>
+</patchbay>
+
