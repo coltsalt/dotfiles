@@ -1,0 +1,43 @@
+ @import "/home/colts/.config/hypr/themes/current_theme/waybar-style.css";
+
+* {
+    all: unset;
+    font-family: "Rubik", "JetBrainsMono Nerd Font Propo", "Noto Sans CJK JP";
+}
+tooltip{
+    background-color: @bg1;
+    color: @fg;
+    border-radius: 12px;
+}
+.modules-center {
+    background-color: @bg1;
+    color: @fg;
+    padding: 4px 18px;
+    border-radius: 99px;
+}
+#clock {
+    font-weight: 500;
+}
+#workspaces button.empty {
+    color: @grey0;
+}
+#workspaces {
+    background-color: @bg2;
+    padding: 2px 4px;
+    margin: 2px 3px;
+    border-radius: 99px;
+}
+#workspaces button {
+    background-color: @bg2;
+    padding: 2px 4px;
+    border-radius: 99px;
+    margin: 0 2px;
+    transition: all 300ms ease-in-out;
+    min-width: 10px
+}
+#workspaces button.active{
+    background-color: @blue;
+    min-width: 2rem;
+    color: @bg1;
+    font-weight: 500;
+}
