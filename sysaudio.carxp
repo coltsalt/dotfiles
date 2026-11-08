@@ -157,7 +157,7 @@
     <Index>18</Index>
     <Name>Output balance</Name>
     <Symbol>bal</Symbol>
-    <Value>1</Value>
+    <Value>0</Value>
    </Parameter>
 
    <Parameter>
@@ -1474,6 +1474,22 @@
    <Target>DeepFilter Mono:Audio In</Target>
   </Connection>
   <Connection>
+   <Source>Spotify/spotify:output_FL</Source>
+   <Target>Browser:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Spotify/spotify:output_FL</Source>
+   <Target>Music:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Spotify/spotify:output_FR</Source>
+   <Target>Browser:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Spotify/spotify:output_FR</Source>
+   <Target>Music:playback_FR</Target>
+  </Connection>
+  <Connection>
    <Source>LSP Parametric Equalizer x8 Stereo:Output L</Source>
    <Target>LSP Compressor Stereo:Input L</Target>
   </Connection>
@@ -1504,38 +1520,6 @@
   <Connection>
    <Source>Audio Gain (Stereo):output_2</Source>
    <Target>FIIO KA13 Pro:playback_AUX1</Target>
-  </Connection>
-  <Connection>
-   <Source>Firefox:output_FL-426</Source>
-   <Target>Browser:playback_FL</Target>
-  </Connection>
-  <Connection>
-   <Source>Firefox:output_FR-427</Source>
-   <Target>Browser:playback_FR</Target>
-  </Connection>
-  <Connection>
-   <Source>Firefox:output_FL</Source>
-   <Target>Browser:playback_FL</Target>
-  </Connection>
-  <Connection>
-   <Source>Firefox:output_FR</Source>
-   <Target>Browser:playback_FR</Target>
-  </Connection>
-  <Connection>
-   <Source>Firefox:output_FL-446</Source>
-   <Target>Browser:playback_FL</Target>
-  </Connection>
-  <Connection>
-   <Source>Firefox:output_FR-447</Source>
-   <Target>Browser:playback_FR</Target>
-  </Connection>
-  <Connection>
-   <Source>Spotify/spotify:output_FL</Source>
-   <Target>Music:playback_FL</Target>
-  </Connection>
-  <Connection>
-   <Source>Spotify/spotify:output_FR</Source>
-   <Target>Music:playback_FR</Target>
   </Connection>
   <Connection>
    <Source>Browser:monitor_FL</Source>
